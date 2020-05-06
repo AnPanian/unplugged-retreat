@@ -116,7 +116,7 @@ header {
 }
 
 header figure {
-
+    flex-shrink:4;
 }
   header .content-wrapper {
     display: flex;
@@ -132,12 +132,17 @@ header nav {
   flex-flow: row wrap;
   width:60%;
 }
-    .header nav ul {
-    display: flex;
+header nav ul li {
+    display: inline-block;
     justify-content: center;
     align-items: center;
     width:33%;
     }
+header nav ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+}
+
 header-divider {
     width:100%;
     height:1px;
@@ -150,6 +155,12 @@ header-divider {
 /*hero area*/
 
 .hero-area {
+  padding-left:30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+hero-area .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -157,7 +168,10 @@ header-divider {
 
 /*aside*/
 
-.aside {
+aside {
+    padding-left:50px;
+}
+aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,22 +185,15 @@ header-divider {
   justify-content: center;
   flex-flow: row wrap;
 }
-.features features-items {
-    display: flex;
+
+article {
+    width: 190px;
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    align-items:center;
+    text-align: center;
+    padding-left: 80px;
 }
-.features h2 {
-    margin-bottom: 60px;
-}
-.features article {
-    width: 63%;
-    margin:30px 0;
-}
-.features p {
-      margin:0;
-  }
+
 
 /*reviews*/
 .reviews {
@@ -201,43 +208,43 @@ header-divider {
 /*****************About Page**********/
 
 
+mission .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 .mission {
+  padding-left: 20px;
+}
+
+info .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.info {
+  padding-left: 20px;
 }
 
-.contact p {
-    margin:0;
-}
 
 /*************FAQ**************/
 
 .faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  padding-left: 20px;
 }
-.faq .content-wrapper {
-    margin:50px 0 0 0;
+faq .content-wrapper {
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
-.faq h2 {
+faq h2 {
     margin-bottom: 40px;
 }
-.faq-content {
+faq-content {
     margin-bottom: 50px;
 }
 
@@ -245,6 +252,7 @@ header-divider {
 
 footer {
     flex-direction:column;
+    text-align: center;
 }
 footer .content-wrapper {
       width:55%;
@@ -363,17 +371,200 @@ footer .social-icons p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+
+@media only screen and (min-width: 768px) {
+  /*tablet styles here*/
+  /*general styles*/
+
+.content-wrapper {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+figure {
+    max-width:225px;
+    max-height:50px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  aside {
+    padding-left:20px;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+  }
+
+header {
+    width:45%;
+    display:inline;
+}
+.form-description,
+.form {
+    padding:50px;
+    text-align:center;
 }
 
+  .features {
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+.features-items {
+   
+    display:flex;
+    align-content:space-around;
+    flex-flow:wrap;
+}
+
+/********Reviews*******/
+
+  .reviews {
+    display: flex;
+    padding-left: 50px;
+  }
+   }
+  .reviews .chives {
+    width: 560px;
+  }
+  .reviews .content-wrapper {
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+  }
+  .reviews .sexy {
+      display:flex;
+    width: 35%;
+    flex-flow:wrap;
+  }
+  
+
+
+
+
+
+
+
+  /*******************About Page****************/
+
+
+header .conent-wrapper { 
+  display: flex;
+  flex-flow:wrap;
+}
+
+
+.mission .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mission p {
+    width:300px;
+    padding: 20px;
+}
+
+.mission .mission-content {
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-flow:row;
+}
+
+.info .content-wrapper {
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow:row;
+}
+.info .address {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+
+
+
+  /*****************FAQ Page************************/
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:wrap
+}
+.faq h1 {
+    text-align:center;
+}
+  .faq .question {
+      padding-left:30px;
+      width:300px;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+  }
+
+
+
+  @media only screen and (min-width: 1200px) {
+    /*computer styles here*/
+
+    body {
+        width:1200px;
+    }
+
+    header {
+        display:inline;
+        justify-content: space-between;
+    }
+    header nav {
+        width: 300px;
+        padding-left: 450px;
+    }
+
+    /********Homepage*******/
+
+  .hero-area .content-wrapper {
+        justify-content:center;
+    }
+
+  aside .content-wrapper {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .features-items  {
+      display: flex;
+      justify-content:center;
+      align-content:center;
+
+  }
+
+  /**************ABOUT*******/
+
+  mission  {
+      display:flex;
+      justify-content:left;
+  }
+  .mission .mission-content {
+      display:flex;
+      justify-content: center;
+  }
+  .mission p {
+     padding-left:50px;
+     width:500px;
+  }
+
+  .info h2 {
+      padding-left:100px;
+  }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
