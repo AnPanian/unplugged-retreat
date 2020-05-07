@@ -145,6 +145,9 @@ address {
 img{
     width:100%
 }
+figure {
+    margin: 0;
+}
 
 .content-wrapper {
   width: 90%;
@@ -172,6 +175,13 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+  header figure {
+      width:60%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-flow: row wrap;
   }
 
 .header-divider {
@@ -523,6 +533,10 @@ input[type=button] {
 
     header figure {
       width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
     }
 
     header nav {
@@ -699,6 +713,13 @@ input[type=button] {
   p {
     font-size: 1.125em;
     line-height: 1.333;
+  }
+  header figure {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
   /* Hero */
   .hero-area h1 {
