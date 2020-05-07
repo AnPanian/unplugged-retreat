@@ -142,6 +142,9 @@ p {
 address {
   font-style: normal;
 }
+img{
+    width:100%
+}
 
 .content-wrapper {
   width: 90%;
@@ -241,6 +244,10 @@ footer {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../assets/jake-melara-30679-unsplash.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
   .hero-area h1 {
@@ -292,6 +299,10 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../assets/rawpixel-800820-unsplash1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
   .features h2 {
