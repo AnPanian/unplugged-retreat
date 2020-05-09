@@ -227,24 +227,32 @@ footer {
     margin: 0;
   }
 
-  footer .content-wrapper {
+footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
   }
 
-  footer .contact {
+footer .contact {
     margin-bottom: 50px;
+  }
+
+  footer social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
   }
 
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
   }
 
     footer .social-icons p {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -642,6 +650,25 @@ input[type=button] {
     align-items: center;
     flex-direction: row;
   }
+  footer social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+    footer .social-icons p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
   footer .contact {
     margin-bottom: 0;
@@ -919,4 +946,24 @@ input[type=button] {
   h3 {
     page-break-after: avoid;
   }
+}
+footer social {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:wrap;
+
+}
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
